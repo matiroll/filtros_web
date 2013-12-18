@@ -268,12 +268,21 @@ class IndicesController < ApplicationController
      @equivalencias_map<<marca.nombre.to_s + " " + a_equi.codigo.to_s
    end
  end 
+ def tipo_filtro_relacion tipos , id
+   nombre = tipos.select{|t| t.id.to_s == id}.first.nombre
+   relacionado = tipos.select{|t| t.nombre == nombre and t.id.to_s != id}
+   if (relacionado.length>0)
+     relacionado.first.id.to_s
+   else
+     return id
+   end
+ end
   def filtros_tipo
    filter_data
     
    tipos_filtros= TipoFiltro.find(:all)
    
-    @filtros = Filtro.find(:all,:conditions=>"tipo = #{params[:id]}",:order=>"codigo asc")
+    @filtros = Filtro.find(:all,:conditions=>"tipo = #{params[:id]} or tipo = #{tipo_filtro_relacion(tipos_filtros,params[:id])}",:order=>"codigo asc")
 
     @tipos_map=Hash.new
 
