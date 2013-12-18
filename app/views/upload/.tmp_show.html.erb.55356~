@@ -1,2 +1,0 @@
-<h3><%= @file.name %></h3>
-<%= link_to "Descargar", url_for(:action => 'file', :id => @file.id) %>
