@@ -152,7 +152,7 @@ class IndicesController < ApplicationController
     if !params[:brand_v]
       params[:brand_v]=params[:id]
     end
-   vehiculos=Vehiculo.find(:all,:conditions=>"marca = " + (params[:brand_v]),:order=>"modelo asc")
+   vehiculos=Vehiculo.find(:all,:conditions=>"marca = " + (params[:brand_v] + " and tipo = " + params[:type_v]),:order=>"modelo asc")
    @marca_vehiculo= MarcaVehiculo.find(params[:brand_v],:order=>"nombre asc")
    @tipo_vehiculo= TipoVehiculo.find(params[:type_v])
    
