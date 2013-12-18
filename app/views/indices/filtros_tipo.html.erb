@@ -1,0 +1,101 @@
+	 <style type="text/css">
+#newspaper-a {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 12px;
+width: 480px;
+text-align: left;
+border-collapse: collapse;
+border: 1px solid #69c;
+margin: 20px;
+}
+table {
+vertical-align: baseline;
+border-spacing: 0;
+padding: 0;
+outline: 0;
+background: transparent;
+} </style>
+	 <%= render "layouts/catalogo_header" %>
+
+		<div id="content">  
+	       <br />
+		   			&nbsp;
+				
+					<br/>	
+			<%if @filtros.empty? %>	
+				<p>No hay filtros del tipo seleccionado</p>
+			<%else %>			
+					Filtros:							
+					<table id="newspaper-a" style="border-color: #CCCCCC;  border-color: #CCCCCC #CCCCCC -moz-use-text-color;  border-style: solid solid none;  border-width: 1px 1px 0;">	
+						<thead  style="border-color: #CCCCCC;  border-color: #CCCCCC #CCCCCC -moz-use-text-color;  border-style: solid solid none;  border-width: 1px 1px 0;">
+							<th scope="col">Tipo</th>
+							<th scope="col">Codigo</th>
+							<th scope="col">Altura</th>							
+							<th scope="col">Rosca</th>							
+							<th scope="col"></th>							
+						</thead>
+						<tbody  style="border-color: #CCCCCC;  border-color: #CCCCCC #CCCCCC -moz-use-text-color;  border-style: solid solid none;  border-width: 1px 1px 1px;">
+					<% @filtros.each do |un_filtro|%>
+						<% form_tag :action => 'filtro_alt' do %>
+							<input name="filtro" type="hidden" value="<%= un_filtro.id %>">						
+							<tr>
+								<td><%= @tipos_map[un_filtro.tipo.to_s] %></td>																		
+								<td><%= un_filtro.codigo %></td>																		
+								<td><%= un_filtro.altura %></td>																		
+								<td><%= un_filtro.rosca %></td>																		
+								<td><%= submit_tag ">>" ,:style=>"cursor:pointer" %></td>
+							</tr>
+						<% end%>
+					<% end %>
+						</tbody>
+					</table>
+			<%end%>		
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		 </div>
+ 	 <%= render "layouts/catalogo_footer" %>

@@ -1,0 +1,5 @@
+<%= render "layouts/header" %>
+
+<h3>Bienvenido al Backoffice de Hasting Filtros</h3>
+
+<%= render "layouts/footer" %>

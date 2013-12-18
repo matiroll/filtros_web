@@ -1,0 +1,61 @@
+<%= render "layouts/header" %>
+
+<!-- lista de precios -->
+             
+<!-- <div id="banner_internas">
+ <div id="banner_adentro_lista_de_precios"> 
+   <div id="publicidades_internas">
+    <div id="direccion"> 
+      
+
+         </div>
+             </div>
+               </div>
+                 </div> -->
+          
+<!-- informacion -->
+
+ <div id="texto">
+   <div id="informacion">
+    <br />
+     <br />
+			<h2>Bienvenido al Backoffice de Hasting Filtros</h2>
+     <center>
+			
+			<br/>
+			<br/>
+			<%= link_to "Cargar Novedades", "/uploadNew" %><br/><br/>
+			
+			<%= link_to "Cargar Lista de Precios", "/upload" %>
+	 </center>
+		<br />
+        <br />	
+        <h2>Ultimos cargados</h2>
+        <br />
+        <br />
+        <table style="border-color: #CCCCCC;  border-color: #CCCCCC #CCCCCC -moz-use-text-color;  border-style: solid solid solid;  border-width: 1px 1px 1px;">
+        	<thead>
+        		<th>Creador</th>
+        		<th>Fecha</th>
+        		<th>Nombre</th>
+        	</thead>
+        	<tbody>
+		        <% @lista_precios.each do |a_file|%>
+		        <tr>
+					<td><%= "  " +  Usuario.find(a_file.created_by).user + "  "%></td><td><%= "  " + a_file.created_at.strftime("%d/%m/%Y %H:%M:%S")+ "  "%></td><td><%= link_to ("  " + a_file.name+ "  "), url_for(:controller=>'upload' , :action => 'file', :id => a_file.id) %></td>
+				</tr>
+				<% end%>
+			</tbody>
+		</table>
+        <br />
+        <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+    
+     </div>
+      </div>
+
+<%= render "layouts/footer" %>

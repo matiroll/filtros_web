@@ -1,0 +1,12 @@
+<h2>Cargar lista de precios</h2>
+<% form_for(@file,:url=> {:action=> 'save'},:html=> {:multipart=> true}) do |form| %>
+    <p><%= form.error_messages %></p>
+	Su archivo: <%= form.file_field("uploaded_file") %><br/>
+	Clave:
+    <%= form.text_field :password %><br/>
+	Desde:
+    <%= form.text_field :desde %><br/>	
+	Hasta:
+    <%= form.text_field :hasta %><br/>				
+<%= submit_tag("Subir Archivo") %>
+<% end %>

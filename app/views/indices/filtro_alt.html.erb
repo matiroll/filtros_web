@@ -1,0 +1,101 @@
+	 <%= render "layouts/catalogo_header" %>
+
+		<div id="content">  
+	       <br />
+		   			&nbsp;
+		   			<a href="/img/fotos/<%=@filtro.codigo.match(/J(.+)PA/i) ? 'JPA': @filtro.codigo[0,1]%> COLOR/<%=@filtro.codigo%>.jpg" target="_blank">
+						<img src="/img/fotos/<%=@filtro.codigo.match(/J(.+)PA/i) ? 'JPA': @filtro.codigo[0,1]%> COLOR/<%=@filtro.codigo%>.jpg" alt="HASTING <%=@filtro.codigo%>"/>
+					</a>					<br/>
+					<p>
+					  <b>Codigo:</b>
+					  <%=h @filtro.codigo %>
+					</p>
+										
+					<p>
+					  <b>Peso:</b>
+					  <%=h @filtro.peso %>
+					</p>
+					
+					<p>
+					  <b>Altura:</b>
+					  <%=h @filtro.altura %>
+					</p>
+					
+					<p>
+					  <b>Rosca:</b>
+					  <%=h @filtro.rosca %>
+					</p>
+					
+					<p>
+					  <b>Largo:</b>
+					  <%=h @filtro.largo %>
+					</p>
+					
+					<p>
+					  <b>Ancho:</b>
+					  <%=h @filtro.ancho %>
+					</p>
+					
+					<p>
+					  <b>Tipo:</b>
+					  <%=h @tipo_filtro.nombre + " " + (@tipo_filtro.nivel||"") %>
+					</p>
+					
+					<p>
+					  <b>Descripcion:</b>
+					  <%=h @filtro.descripcion %>
+					</p>
+					<p>
+					  <b>Diametro exterior:</b>
+					  <%=h @filtro.diametro_exterior_A %>
+					</p>
+					
+					<p>
+					  <b>Diametro interior:</b>
+					  <%=h @filtro.diametro_interior_A %>
+					</p>
+					<p>
+					  <b>Diametro exterior:</b>
+					  <%=h @filtro.diametro_exterior_B %>
+					</p>
+					
+					<p>
+					  <b>Diametro interior:</b>
+					  <%=h @filtro.diametro_interior_B %>
+					</p>
+					<p>
+					  <b>Diametro nominal:</b>
+					  <%=h @filtro.diametro_nominal %>
+					</p>
+																										
+					<%if !@alternativos_map.empty? %>
+						<br/>	
+						<h3>Alternativos</h3>
+						<% @alternativos_map.each do |k,v|%>
+							<a href="<%= k %>"><%= v%></a><br/>
+						<% end%>
+					<%end%>
+					<br/>
+					<%if !@equivalencias_map.empty? %>
+
+					<h3>Equivalencias</h3>
+					<% @equivalencias_map.each do |k|%>
+						<p><%= k %></p>
+					<% end%>
+							<br/>										
+					<%end%>
+							<br/>										
+
+					<h3>Aplicaciones</h3>
+					<% @aplicaciones_map.each do |k,v|%>
+						<a href="<%= k %>"><%= v%></a><br/>
+					<% end%>
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+		 </div>
+ 	 <%= render "layouts/catalogo_footer" %>

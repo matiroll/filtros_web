@@ -1,0 +1,20 @@
+<h1>Editing marca_vehiculo</h1>
+
+<% form_for(@marca_vehiculo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @marca_vehiculo %> |
+<%= link_to 'Back', marca_vehiculos_path %>

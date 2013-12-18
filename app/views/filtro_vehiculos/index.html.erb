@@ -1,0 +1,24 @@
+<h1>Listing filtro_vehiculos</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Vehiculo</th>
+    <th>Filtro</th>
+  </tr>
+
+<% @filtro_vehiculos.each do |filtro_vehiculo| %>
+  <tr>
+    <td><%=h filtro_vehiculo.id %></td>
+    <td><%=h filtro_vehiculo.vehiculo %></td>
+    <td><%=h filtro_vehiculo.filtro %></td>
+    <td><%= link_to 'Show', filtro_vehiculo %></td>
+    <td><%= link_to 'Edit', edit_filtro_vehiculo_path(filtro_vehiculo) %></td>
+    <td><%= link_to 'Destroy', filtro_vehiculo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New filtro_vehiculo', new_filtro_vehiculo_path %>

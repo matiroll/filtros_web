@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  codigo: MyString
+  diametro_exterior: 1.5
+  diametro_interior: 1.5
+  peso: 1.5
+  altura: 1.5
+  rosca: 1.5
+  largo: 1.5
+  ancho: 1.5
+  tipo: 1
+  descripcion: MyText
+
+two:
+  id: 1
+  codigo: MyString
+  diametro_exterior: 1.5
+  diametro_interior: 1.5
+  peso: 1.5
+  altura: 1.5
+  rosca: 1.5
+  largo: 1.5
+  ancho: 1.5
+  tipo: 1
+  descripcion: MyText

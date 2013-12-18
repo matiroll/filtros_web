@@ -1,0 +1,55 @@
+
+<div id="banner_internas">
+ <div id="banner_adentro_aire"> 
+   <div id="publicidades_internas">
+    <div id="direccion"> 
+      
+        <h2> ¿Sabías que...?</h2>
+        <br />
+        <br />
+        La tecnología de última generación adquirida y la mano de obra especializada nos ponen a la vanguardia en el rubro, por calidad y la variedad más amplia de modelos del país.
+     
+        <br />
+        <br />
+    </div>
+       <div id="catalogo_interna"><a href="catalogo_online" target="_blank"><img src="img/catalogo.jpg" width="247" height="350" /></a></div>
+        </div>
+  </div>
+    
+ 
+</div>
+          
+<!-- informacion -->
+
+ <div id="texto">
+   <div id="informacion">
+     <br />
+     <br />
+     <h2>Filtro de Aire</h2>
+<br />
+       <br />
+       
+    </p>El propósito del filtro de aire es muy simple, proteger al motor de partículas sólidas suspendidas en el aire, para ello tiene que bloquear de manera eficiente el ingreso de suciedad, polvo, arena, hollín, etc.
+y garantizar, por otro lado, la alta permeabilidad necesaria para el gran caudal de aire utilizado en la quema del combustible. Solo el aire limpio debe llegar al sistema de aspiración del motor.</p>
+       <br />
+       <br />
+     </p>Un filtro de aire saturado de partículas contaminantes provoca un consumo excesivo de combustible por una deficiente mezcla en el proceso de combustión, además de originar pérdida de potencia y recalentamiento excesivo del motor.
+Generalmente cada fabricante exige respetar los períodos de cambios de los filtros de acuerdo al manual de mantenimiento de cada motor. Para nuestra zona HASTING recomienda cambiar 2 filtros de aire por cada uno de aceite.</p>
+   
+     <br />
+     <br />
+     <img src="img/miniaturas/aire/aire1.jpg" width="412" height="300" />
+     <br />
+     <br />
+     <img src="img/miniaturas/aire/aire2.jpg" width="412" height="300" />
+     <br />
+     <br />
+     <img src="img/miniaturas/aire/aire3.jpg" width="412" height="300" />
+     <br />
+     <br />
+     <br />
+     <br />
+   
+     
+   </div>
+</div>

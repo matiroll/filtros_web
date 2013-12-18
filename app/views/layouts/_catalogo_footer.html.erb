@@ -1,0 +1,22 @@
+		 	<div id="findCode" style="background-color:#DDE9EC;"> 
+			<br/>
+				     &nbsp; Busque por equivalencia:&nbsp;
+				   <% form_tag :action => 'marca_equivalencia' do %>
+		   			&nbsp;
+					Marca:
+					&nbsp;<%= select_tag "brand_eq_v", options_for_select(@marcas_eq_map), :include_blank => "..." %>
+					<input name="type_v" type="hidden" value="<%= params[:id] %>">				
+				<%= submit_tag ">>"  ,:style=>"cursor:pointer"%>
+			<% end%>
+		   <script>
+		   	$("#brand_eq_v").html($('#brand_eq_v option').sort(function(x, y) {        
+			     return $(x).text().toUpperCase() < $(y).text().toUpperCase() ? -1 : 1;
+			}));
+			$("#brand_eq_v").get(0).selectedIndex = 0;
+			e.preventDefault();
+		   </script>					     
+			<br/>&nbsp;
+		   </div>    
+			<br/>
+   </div>
+</div>

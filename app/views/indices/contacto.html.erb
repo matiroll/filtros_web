@@ -1,0 +1,43 @@
+<div id="banner_internas">
+ <div id="banner_adentro_contacto"> 
+   <div id="publicidades_internas">
+    <div id="direccion"> 
+      
+      
+    </div>
+     <div id="catalogo_interna"><a href="catalogo_online" target="_blank"><img src="/img/catalogo.jpg" width="247" height="350" /></a></div>
+        </div>
+  </div>
+    
+ 
+</div>
+          
+<!-- informacion -->
+
+ <div id="texto">
+   <div id="informacion">
+     <br />
+     <br />
+     <h2>Contacto</h2>
+    			<% if flash[:notice] %>
+			  <%= h flash[:notice] %>
+			<% end %>
+
+     <% form_for :contacto, @contacto,:html=> {:class=>"contacto"} do |f| %>
+			  <%= error_messages_for :contacto %>
+	            <div><label>Tu Nombre:</label><%= f.text_field 'nombre',:class=> "nombre" %></div>
+	            <div><label>Tu Email:</label><%= f.text_field 'email',:class=> "email" %></div>
+	            <div><label>Asunto:</label><%= f.text_field 'asunto',:class=> "asunto" %></div>
+	            <div><label>Mensaje:</label><%= f.text_area 'mensaje',{:class=> "mensaje",:rows=>6} %></div>
+	            <div><%= submit_tag "Enviar Mensaje",:class=> "boton" %></div>			  
+			<% end %>
+			     <br />
+       <br />
+
+    
+     <br />
+     <br />
+     <br />
+     <br />
+   </div>
+</div>

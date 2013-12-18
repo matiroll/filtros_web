@@ -1,0 +1,37 @@
+<div id="banner_internas">
+ <div id="banner_adentro_catalogo"> 
+   <div id="publicidades_internas">
+    <div id="direccion"> 
+	    <br />
+     	<br />
+      <center><h4>Seleccione Tipo de vehículo</h4><br /></center>
+	  <% @tipo_vehiculos.each do |un_tipo|%>
+	  	<div style="background-image:url('/img/boton_catalogo/button_<%= un_tipo.id.to_s == params[:id].to_s ? "on" : "off"%>.png');background-repeat:no-repeat;padding-top:8px;text-align:center;" >
+					<a href="/tipo_v/<%= un_tipo.id %>"><h3><%= un_tipo.nombre%><br/>&nbsp;</h3></a>			
+	  	</div>       
+	  <% end%> 
+	  <div id="findType"> 
+				      <br/><center><h4>Seleccione Tipo de filtro</h4><br />
+					  <%randHeadSize=["2","3","1","2","5","1","3","2"]%>
+					  <% @tipo_filtros.select { |element| !element.nivel || element.nivel=="Primario"}.each_with_index do |un_tipo,i|%>
+								<a href="/indices/filtros_tipo/<%=un_tipo.id%>"><%= "<h#{randHeadSize[i]}>" +  un_tipo.nombre + "</h#{randHeadSize[i]}>"  %></a>		
+					  <% end%> 
+					  </center>
+	 </div>	  
+    </div>
+       <div id="catalogo_interna"> <a href="contacto"><img src="/img/contacto.jpg" width="247" height="350" /></a></div>
+         </div>
+  </div>
+    
+ 
+</div>
+          
+<!-- informacion -->
+
+ <div id="texto">
+   <div id="informacion">
+     <br />
+     <br />
+	 	<h2>CATALOGO ONLINE</h2>
+	 		
+         <br />

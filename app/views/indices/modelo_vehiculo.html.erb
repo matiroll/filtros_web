@@ -1,0 +1,136 @@
+	 	 <style type="text/css">
+#newspaper-a {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 12px;
+width: 480px;
+text-align: left;
+border-collapse: collapse;
+border: 1px solid #69c;
+margin: 20px;
+}
+table {
+vertical-align: baseline;
+border-spacing: 0;
+padding: 0;
+outline: 0;
+background: transparent;
+} </style>
+<%= render "layouts/catalogo_header" %>
+
+	 <a href="/tipo_v/<%= params[:type_v].to_s %>"><%= @tipo_vehiculo.nombre %></a> &nbsp; > &nbsp;
+	 <a href="/indices/marca_vehiculo/<%= params[:brand_v].to_s %>?type_v=<%= params[:type_v].to_s %>"><%= @marca_vehiculo.nombre %></a> &nbsp; > &nbsp;  
+	 <a href="/indices/modelo_vehiculo/<%= params[:model_v].to_s %>?type_v=<%= params[:type_v].to_s %>&brand_v=<%= params[:brand_v].to_s %>"><%= @modelo_vehiculo.modelo %></a> &nbsp;  &nbsp;  
+
+		<div id="content">  
+	       <br />
+		   			&nbsp;
+					<p>
+					  <b>Modelo:</b>
+					  <%=h @modelo_vehiculo.modelo %>
+					</p>
+					
+					<p>
+					  <b>Marca:</b>
+					  <%=h @marca_vehiculo.nombre %>
+					</p>
+					
+					<p>
+					  <b>Tipo:</b>
+					  <%=h @tipo_vehiculo.nombre %>
+					</p>
+					
+					<p>
+					  <b>Desde:</b>
+					  <%=h @modelo_vehiculo.desde %>
+					</p>
+					
+					<p>
+					  <b>Hasta:</b>
+					  <%=h @modelo_vehiculo.hasta %>
+					</p>
+					
+					<p>
+					  <b>Motor:</b>
+					  <%=h @modelo_vehiculo.motor %>
+					</p>
+					<br/>			
+			<%if @filtros.empty? %>	
+				<p>No hay filtros para el modelo seleccionado</p>
+			<%else 	%>						
+					Filtros:							
+					<table  id="newspaper-a" style="border-color: #CCCCCC;  border-color: #CCCCCC #CCCCCC -moz-use-text-color;  border-style: solid solid none;  border-width: 1px 1px 0;">	
+						<thead  style="border-color: #CCCCCC;  border-color: #CCCCCC #CCCCCC -moz-use-text-color;  border-style: solid solid none;  border-width: 1px 1px 0;">
+							<th scope="col">Tipo</th>
+							<th scope="col">Codigo</th>
+							<th scope="col">Altura</th>							
+							<th scope="col">Rosca</th>							
+							<th scope="col"></th>							
+						</thead>
+						<tbody  style="border-color: #CCCCCC;  border-color: #CCCCCC #CCCCCC -moz-use-text-color;  border-style: solid solid none;  border-width: 1px 1px 1px;">
+					<% @filtros.each do |un_filtro|%>
+						<% form_tag :action => 'filtro' do %>
+							<input name="type_v" type="hidden" value="<%= params[:type_v] %>">								
+							<input name="brand_v" type="hidden" value="<%= params[:brand_v] %>">							
+							<input name="model_v" type="hidden" value="<%= params[:model_v] %>">						
+							<input name="filtro" type="hidden" value="<%= un_filtro.id %>">						
+							<tr>
+								<td><%= @tipos_map[un_filtro.tipo.to_s] %></td>																		
+								<td><%= un_filtro.codigo %></td>																		
+								<td><%= un_filtro.altura %></td>																		
+								<td><%= un_filtro.rosca %></td>																		
+								<td><%= submit_tag ">>"  ,:style=>"cursor:pointer"%></td>
+							</tr>
+						<% end%>
+					<% end %>
+						</tbody>
+					</table>
+					<% end %>
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		 </div>
+ 	 <%= render "layouts/catalogo_footer" %>

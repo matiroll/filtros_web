@@ -1,0 +1,2 @@
+module EquivalenciasHelper
+end

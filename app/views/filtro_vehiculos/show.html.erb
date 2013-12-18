@@ -1,0 +1,18 @@
+<p>
+  <b>Id:</b>
+  <%=h @filtro_vehiculo.id %>
+</p>
+
+<p>
+  <b>Vehiculo:</b>
+  <%=h @filtro_vehiculo.vehiculo %>
+</p>
+
+<p>
+  <b>Filtro:</b>
+  <%=h @filtro_vehiculo.filtro %>
+</p>
+
+
+<%= link_to 'Edit', edit_filtro_vehiculo_path(@filtro_vehiculo) %> |
+<%= link_to 'Back', filtro_vehiculos_path %>

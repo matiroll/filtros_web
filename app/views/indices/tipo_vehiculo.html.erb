@@ -1,0 +1,72 @@
+	 <%= render "layouts/catalogo_header" %>
+
+	 <a href="/tipo_v/<%= params[:id].to_s %>"><%= @tipo_vehiculo.nombre %></a> &nbsp; &nbsp;  
+		<div id="content">  
+	       <br />
+		   <% if @marcas_map.empty? %>
+		   	No hay marcas para el tipo de vehiculo seleccionado
+		   <% else %>
+			   <% form_tag :action => 'marca_vehiculo' do %>
+		   			&nbsp;
+					Seleccione la marca del vehiculo:<br/>
+					<%= select_tag "brand_v", options_for_select(@marcas_map), :include_blank => "..." %>
+					<input name="type_v" type="hidden" value="<%= params[:id] %>">				
+				<%= submit_tag ">>"  ,:style=>"cursor:pointer"%>
+			<% end%>
+		   <% end%>			
+		   <script>
+		   	$("#brand_v").html($('#brand_v option').sort(function(x, y) {        
+			     return $(x).text().toUpperCase() < $(y).text().toUpperCase() ? -1 : 1;
+			}));
+			$("#brand_v").get(0).selectedIndex = 0;
+			e.preventDefault();
+		   </script>
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		 </div>
+ 	 <%= render "layouts/catalogo_footer" %>

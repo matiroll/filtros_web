@@ -1,0 +1,24 @@
+<h1>Editing filtro_vehiculo</h1>
+
+<% form_for(@filtro_vehiculo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :vehiculo %><br />
+    <%= f.text_field :vehiculo %>
+  </p>
+  <p>
+    <%= f.label :filtro %><br />
+    <%= f.text_field :filtro %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @filtro_vehiculo %> |
+<%= link_to 'Back', filtro_vehiculos_path %>

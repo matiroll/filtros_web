@@ -1,0 +1,39 @@
+<h1>New vehiculo</h1>
+
+<% form_for(@vehiculo) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :modelo %><br />
+    <%= f.text_field :modelo %>
+  </p>
+  <p>
+    <%= f.label :marca %><br />
+    <%= f.text_field :marca %>
+  </p>
+  <p>
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </p>
+  <p>
+    <%= f.label :desde %><br />
+    <%= f.text_field :desde %>
+  </p>
+  <p>
+    <%= f.label :hasta %><br />
+    <%= f.text_field :hasta %>
+  </p>
+  <p>
+    <%= f.label :motor %><br />
+    <%= f.text_field :motor %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', vehiculos_path %>

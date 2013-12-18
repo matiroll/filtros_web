@@ -1,0 +1,64 @@
+	 <%= render "layouts/catalogo_header" %>
+
+		<div id="content">  
+	       <br />
+		   <% if @equivalencias_map.empty? %>
+		   	No hay equivalencias para la marca seleccionada
+		   <% else %>
+						<br/>	
+						<h3>Seleccione el filtro equivalente:</h3>
+						<br/>	
+						Equivalencia    |   Hasting <br/>	<br/>	
+						<% @equivalencias_map.each do |k,v|%>
+							<a href="<%= k %>"><%= v%></a><br/>
+						<% end%>
+		<%end%>	
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		 </div>
+ 	 <%= render "layouts/catalogo_footer" %>

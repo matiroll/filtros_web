@@ -1,0 +1,74 @@
+	 <%= render "layouts/catalogo_header" %>
+
+	 <a href="/tipo_v/<%= params[:type_v].to_s %>"><%= @tipo_vehiculo.nombre %></a> &nbsp; > &nbsp;
+	 <a href="/indices/marca_vehiculo/<%= params[:brand_v].to_s %>?type_v=<%= params[:type_v].to_s %>"><%= @marca_vehiculo.nombre %></a> &nbsp;  &nbsp;  
+		<div id="content">  
+	       <br />
+		   <% if @vehiculos_map.empty? %>
+		   	No hay vehiculos para la marca seleccionada
+		   <% else %>
+			   <% form_tag :action => 'modelo_vehiculo' do %>
+		   			&nbsp;
+					Seleccione el modelo del vehiculo:<br/>
+					<%= select_tag "model_v", options_for_select(@vehiculos_map), :include_blank => "..." %>	
+					<input name="type_v" type="hidden" value="<%= params[:type_v] %>">								
+					<input name="brand_v" type="hidden" value="<%= params[:brand_v] %>">								
+				<%= submit_tag ">>"  ,:style=>"cursor:pointer"%>
+			<% end%>
+		<%end%>	
+		   <script>
+		   	$("#model_v").html($('#model_v option').sort(function(x, y) {        
+			     return $(x).text().toUpperCase() < $(y).text().toUpperCase() ? -1 : 1;
+			}));
+			$("#model_v").get(0).selectedIndex = 0;
+			e.preventDefault();
+		   </script>		
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		   		   	       <br />
+		   			&nbsp;
+	       <br />
+	       <br />
+	       <br />
+	       <br />	&nbsp;
+	       <br />
+		 </div>
+ 	 <%= render "layouts/catalogo_footer" %>

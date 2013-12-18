@@ -1,0 +1,22 @@
+<h1>Listing marca_vehiculos</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Nombre</th>
+  </tr>
+
+<% @marca_vehiculos.each do |marca_vehiculo| %>
+  <tr>
+    <td><%=h marca_vehiculo.id %></td>
+    <td><%=h marca_vehiculo.nombre %></td>
+    <td><%= link_to 'Show', marca_vehiculo %></td>
+    <td><%= link_to 'Edit', edit_marca_vehiculo_path(marca_vehiculo) %></td>
+    <td><%= link_to 'Destroy', marca_vehiculo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New marca_vehiculo', new_marca_vehiculo_path %>

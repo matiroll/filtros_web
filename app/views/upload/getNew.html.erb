@@ -1,0 +1,11 @@
+<br/>
+<center>
+<h2>Cargar Novedades</h2>
+<br/>
+<% form_for(@file,:url=> {:action=> 'saveNew'},:html=> {:multipart=> true}) do |form| %>
+    <p><%= form.error_messages %></p>
+	Su archivo: <%= form.file_field("uploaded_file") %><br/>		
+<%= submit_tag("Subir Archivo") %>
+<% end %>
+</center>
+<br/>

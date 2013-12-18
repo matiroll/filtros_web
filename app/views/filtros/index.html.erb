@@ -1,0 +1,46 @@
+<h1>Listing filtros</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Codigo</th>
+    <th>Diametro exterior_A</th>
+    <th>Diametro interior_A</th>
+    <th>Diametro exterior_B</th>
+    <th>Diametro interior_B</th>
+    <th>Diametro nominal</th>
+	<th>Peso</th>
+    <th>Altura</th>
+    <th>Rosca</th>
+    <th>Largo</th>
+    <th>Ancho</th>
+    <th>Tipo</th>
+    <th>Descripcion</th>
+  </tr>
+
+<% @filtros.each do |filtro| %>
+  <tr>
+    <td><%=h filtro.id %></td>
+    <td><%=h filtro.codigo %></td>
+    <td><%=h filtro.diametro_exterior_A %></td>
+    <td><%=h filtro.diametro_interior_A %></td>
+    <td><%=h filtro.diametro_exterior_B %></td>
+    <td><%=h filtro.diametro_interior_B %></td>
+    <td><%=h filtro.diametro_nominal %></td>
+	<td><%=h filtro.peso %></td>
+    <td><%=h filtro.altura %></td>
+    <td><%=h filtro.rosca %></td>
+    <td><%=h filtro.largo %></td>
+    <td><%=h filtro.ancho %></td>
+    <td><%=h filtro.tipo %></td>
+    <td><%=h filtro.descripcion %></td>
+    <td><%= link_to 'Show', filtro %></td>
+    <td><%= link_to 'Edit', edit_filtro_path(filtro) %></td>
+    <td><%= link_to 'Destroy', filtro, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New filtro', new_filtro_path %>

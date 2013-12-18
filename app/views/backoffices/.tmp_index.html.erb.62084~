@@ -1,0 +1,20 @@
+<%= render "layouts/header" %>
+<br/>
+<center>
+<h1>Bienvenido al Backoffice de Hasting Filtros</h1>
+
+<br/>
+<%= link_to "Cargar Novedades", "/uploadNew" %><br/>
+
+<%= link_to "Cargar Lista de Precios", "/upload" %>
+<br/>
+<br/>
+<h3>Ultimos cargados</h3>
+<% @lista_precios.each do |a_file|%>
+	<%= link_to a_file.name, url_for(:controller=>'upload' , :action => 'file', :id => a_file.id) %>
+	<br/>
+	<br/>
+<% end%>
+</center>
+
+<%= render "layouts/footer" %>

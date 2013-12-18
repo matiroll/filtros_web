@@ -1,0 +1,38 @@
+<p>
+  <b>Id:</b>
+  <%=h @vehiculo.id %>
+</p>
+
+<p>
+  <b>Modelo:</b>
+  <%=h @vehiculo.modelo %>
+</p>
+
+<p>
+  <b>Marca:</b>
+  <%=h @vehiculo.marca %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%=h @vehiculo.tipo %>
+</p>
+
+<p>
+  <b>Desde:</b>
+  <%=h @vehiculo.desde %>
+</p>
+
+<p>
+  <b>Hasta:</b>
+  <%=h @vehiculo.hasta %>
+</p>
+
+<p>
+  <b>Motor:</b>
+  <%=h @vehiculo.motor %>
+</p>
+
+
+<%= link_to 'Edit', edit_vehiculo_path(@vehiculo) %> |
+<%= link_to 'Back', vehiculos_path %>
