@@ -1,6 +1,4 @@
 class EquivalenciasController < ApplicationController
-      before_filter :require_login
-
   # GET /equivalencias
   # GET /equivalencias.xml
   def index

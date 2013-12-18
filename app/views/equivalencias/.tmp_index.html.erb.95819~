@@ -1,0 +1,26 @@
+<h1>Listing equivalencias</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Codigo</th>
+    <th>Filtro</th>
+    <th>Marca</th>
+  </tr>
+
+<% @equivalencias.each do |equivalencia| %>
+  <tr>
+    <td><%=h equivalencia.id %></td>
+    <td><%=h equivalencia.codigo %></td>
+    <td><%=h equivalencia.filtro %></td>
+    <td><%=h equivalencia.marca %></td>
+    <td><%= link_to 'Show', equivalencia %></td>
+    <td><%= link_to 'Edit', edit_equivalencia_path(equivalencia) %></td>
+    <td><%= link_to 'Destroy', equivalencia, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New equivalencia', new_equivalencia_path %>
