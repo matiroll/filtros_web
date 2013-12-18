@@ -1,6 +1,4 @@
 class VehiculosController < ApplicationController
-     before_filter :require_login
-
   # GET /vehiculos
   # GET /vehiculos.xml
   def index

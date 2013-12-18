@@ -1,5 +1,4 @@
 class FiltrosController < ApplicationController
-    before_filter :require_login
   # GET /filtros
   # GET /filtros.xml
   def index

@@ -1,6 +1,4 @@
 class MarcaVehiculosController < ApplicationController
-     before_filter :require_login
-
   # GET /marca_vehiculos
   # GET /marca_vehiculos.xml
   def index

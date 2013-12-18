@@ -1,0 +1,406 @@
+2013/05/16 10:12:54 [emerg] 23057#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2013/05/16 10:12:54 [emerg] 23057#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2013/05/16 10:12:54 [emerg] 23057#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2013/05/16 10:12:54 [emerg] 23057#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2013/05/16 10:12:54 [emerg] 23057#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2013/05/16 10:12:54 [emerg] 23057#0: still could not bind()
+[ 2013-05-16 10:21:03.2177 23735/b7fc56e0 agents/LoggingAgent/Main.cpp:272 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.23724/generation-0/logging.socket
+[ 2013-05-16 10:21:03.2191 23730/b7fe28f0 agents/HelperAgent/Main.cpp:554 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.23724/generation-0/request.socket
+[ 2013-05-16 10:21:05.4361 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23760 stderr] /etc/profile: line 78: /scripts/gethomedir: Permiso denegado
+[ 2013-05-16 10:21:05.4371 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23760 stderr] bash: /root/.bash_profile: Permiso denegado
+[ 2013-05-16 10:21:05.4371 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23760 stderr] bash: /root/.bashrc: Permiso denegado
+[ 2013-05-16 10:21:05.4556 23730/b60e9b90 Pool2/Spawner.h:739 ]: [App 23760 stdout] 
+[ 2013-05-16 10:21:05.4779 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23760 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-05-16 10:21:05.4779 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23760 stderr] 
+[ 2013-05-16 10:21:05.4916 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23760 stderr] # mkdir -p /tmp/passenger-standalone.23718/locations.ini/libout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:21:05.4917 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23760 stderr] 
+[ 2013-05-16 10:21:05.4924 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23760 stderr] Not a valid directory. Trying a different one...
+[ 2013-05-16 10:21:05.4925 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23760 stderr] 
+[ 2013-05-16 10:21:05.4925 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23760 stderr] -------------------------------
+[ 2013-05-16 10:21:05.4926 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23760 stderr] 
+[ 2013-05-16 10:21:05.4926 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23760 stderr] # mkdir -p //.passenger/native_support/4.0.2/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:21:05.4927 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23760 stderr] 
+[ 2013-05-16 10:21:05.5276 23730/b60e9b90 Pool2/Implementation.cpp:762 ]: Could not spawn process for group /home/mc001055/filtros_web#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:454)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:557)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:205)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:743)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:695)
+
+[ 2013-05-16 10:21:05.5278 23730/b6b2bb90 agents/HelperAgent/RequestHandler.h:1888 ]: [Client 23] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+Permission denied - /.passenger (Errno::EACCES)
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `each'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:145:in `mkdir'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:162:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:127:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:138:in `compile_and_load'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:37:in `start'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:205
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `require'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `init_passenger'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:155
+
+[ 2013-05-16 10:21:25.8809 23730/b60e9b90 Pool2/Spawner.h:739 ]: [App 23818 stdout] 
+[ 2013-05-16 10:21:25.8811 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23818 stderr] /etc/profile: line 78: /scripts/gethomedir: Permiso denegado
+[ 2013-05-16 10:21:25.8812 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23818 stderr] bash: /root/.bash_profile: Permiso denegado
+[ 2013-05-16 10:21:25.8812 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23818 stderr] bash: /root/.bashrc: Permiso denegado
+[ 2013-05-16 10:21:25.8984 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23818 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-05-16 10:21:25.8985 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23818 stderr] 
+[ 2013-05-16 10:21:25.9134 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23818 stderr] # mkdir -p /tmp/passenger-standalone.23718/locations.ini/libout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:21:25.9135 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23818 stderr] 
+[ 2013-05-16 10:21:25.9141 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23818 stderr] Not a valid directory. Trying a different one...
+[ 2013-05-16 10:21:25.9142 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23818 stderr] 
+[ 2013-05-16 10:21:25.9142 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23818 stderr] -------------------------------
+[ 2013-05-16 10:21:25.9143 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23818 stderr] 
+[ 2013-05-16 10:21:25.9144 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23818 stderr] # mkdir -p //.passenger/native_support/4.0.2/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:21:25.9144 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23818 stderr] 
+[ 2013-05-16 10:21:25.9215 23730/b60e9b90 Pool2/Implementation.cpp:762 ]: Could not spawn process for group /home/mc001055/filtros_web#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:454)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:557)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:205)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:743)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:695)
+
+[ 2013-05-16 10:21:25.9216 23730/b6b2bb90 agents/HelperAgent/RequestHandler.h:1888 ]: [Client 23] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+Permission denied - /.passenger (Errno::EACCES)
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `each'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:145:in `mkdir'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:162:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:127:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:138:in `compile_and_load'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:37:in `start'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:205
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `require'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `init_passenger'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:155
+
+[ 2013-05-16 10:22:45.9856 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23958 stderr] /etc/profile: line 78: /scripts/gethomedir: Permiso denegado
+[ 2013-05-16 10:22:45.9867 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23958 stderr] bash: /root/.bash_profile: Permiso denegado
+[ 2013-05-16 10:22:45.9867 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23958 stderr] bash: /root/.bashrc: Permiso denegado
+[ 2013-05-16 10:22:45.9949 23730/b60e9b90 Pool2/Spawner.h:739 ]: [App 23958 stdout] 
+[ 2013-05-16 10:22:46.0171 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23958 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-05-16 10:22:46.0172 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23958 stderr] 
+[ 2013-05-16 10:22:46.0309 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23958 stderr] # mkdir -p /tmp/passenger-standalone.23718/locations.ini/libout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:22:46.0309 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23958 stderr] 
+[ 2013-05-16 10:22:46.0315 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23958 stderr] Not a valid directory. Trying a different one...
+[ 2013-05-16 10:22:46.0316 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23958 stderr] 
+[ 2013-05-16 10:22:46.0316 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23958 stderr] -------------------------------
+[ 2013-05-16 10:22:46.0316 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23958 stderr] 
+[ 2013-05-16 10:22:46.0317 23730/b60a8b90 Pool2/Spawner.h:159 ]: [App 23958 stderr] # mkdir -p //.passenger/native_support/4.0.2/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:22:46.0317 23730/b60a8b90 Pool2/Spawner.h:151 ]: [App 23958 stderr] 
+[ 2013-05-16 10:22:46.0390 23730/b60e9b90 Pool2/Implementation.cpp:762 ]: Could not spawn process for group /home/mc001055/filtros_web#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:454)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:557)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:205)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:743)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:695)
+
+[ 2013-05-16 10:22:46.0391 23730/b6b2bb90 agents/HelperAgent/RequestHandler.h:1888 ]: [Client 23] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+Permission denied - /.passenger (Errno::EACCES)
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `each'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:145:in `mkdir'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:162:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:127:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:138:in `compile_and_load'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:37:in `start'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:205
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `require'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `init_passenger'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:155
+
+[ 2013-05-16 10:24:15.9222 24137/b7f1d8f0 agents/HelperAgent/Main.cpp:554 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.24131/generation-0/request.socket
+[ 2013-05-16 10:24:15.9325 24142/b7f2d6e0 agents/LoggingAgent/Main.cpp:272 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.24131/generation-0/logging.socket
+[ 2013-05-16 10:24:17.9935 24137/b6024b90 Pool2/Spawner.h:739 ]: [App 24161 stdout] 
+[ 2013-05-16 10:24:17.9937 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24161 stderr] /etc/profile: line 78: /scripts/gethomedir: Permiso denegado
+[ 2013-05-16 10:24:17.9937 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24161 stderr] bash: /root/.bash_profile: Permiso denegado
+[ 2013-05-16 10:24:17.9937 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24161 stderr] bash: /root/.bashrc: Permiso denegado
+[ 2013-05-16 10:24:18.0100 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24161 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-05-16 10:24:18.0101 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24161 stderr] 
+[ 2013-05-16 10:24:18.0237 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24161 stderr] # mkdir -p /tmp/passenger-standalone.24125/locations.ini/libout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:24:18.0237 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24161 stderr] 
+[ 2013-05-16 10:24:18.0243 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24161 stderr] Not a valid directory. Trying a different one...
+[ 2013-05-16 10:24:18.0243 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24161 stderr] 
+[ 2013-05-16 10:24:18.0244 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24161 stderr] -------------------------------
+[ 2013-05-16 10:24:18.0244 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24161 stderr] 
+[ 2013-05-16 10:24:18.0245 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24161 stderr] # mkdir -p //.passenger/native_support/4.0.2/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:24:18.0245 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24161 stderr] 
+[ 2013-05-16 10:24:18.0921 24137/b6024b90 Pool2/Implementation.cpp:762 ]: Could not spawn process for group /home/mc001055/filtros_web#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:454)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:557)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:205)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:743)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:695)
+
+[ 2013-05-16 10:24:18.0923 24137/b6a66b90 agents/HelperAgent/RequestHandler.h:1888 ]: [Client 23] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+Permission denied - /.passenger (Errno::EACCES)
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `each'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:145:in `mkdir'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:162:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:127:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:138:in `compile_and_load'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:37:in `start'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:205
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `require'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `init_passenger'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:155
+
+[ 2013-05-16 10:26:04.8006 24137/b6024b90 Pool2/Spawner.h:739 ]: [App 24339 stdout] 
+[ 2013-05-16 10:26:04.8008 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24339 stderr] /etc/profile: line 78: /scripts/gethomedir: Permiso denegado
+[ 2013-05-16 10:26:04.8008 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24339 stderr] bash: /root/.bash_profile: Permiso denegado
+[ 2013-05-16 10:26:04.8008 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24339 stderr] bash: /root/.bashrc: Permiso denegado
+[ 2013-05-16 10:26:04.8193 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24339 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-05-16 10:26:04.8193 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24339 stderr] 
+[ 2013-05-16 10:26:04.8335 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24339 stderr] # mkdir -p /tmp/passenger-standalone.24125/locations.ini/libout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:26:04.8335 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24339 stderr] 
+[ 2013-05-16 10:26:04.8341 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24339 stderr] Not a valid directory. Trying a different one...
+[ 2013-05-16 10:26:04.8341 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24339 stderr] 
+[ 2013-05-16 10:26:04.8342 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24339 stderr] -------------------------------
+[ 2013-05-16 10:26:04.8342 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24339 stderr] 
+[ 2013-05-16 10:26:04.8343 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24339 stderr] # mkdir -p //.passenger/native_support/4.0.2/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:26:04.8344 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24339 stderr] 
+[ 2013-05-16 10:26:04.8426 24137/b6024b90 Pool2/Implementation.cpp:762 ]: Could not spawn process for group /home/mc001055/filtros_web#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:454)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:557)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:205)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:743)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:695)
+
+[ 2013-05-16 10:26:04.8428 24137/b6a66b90 agents/HelperAgent/RequestHandler.h:1888 ]: [Client 22] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+Permission denied - /.passenger (Errno::EACCES)
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `each'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:145:in `mkdir'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:162:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:127:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:138:in `compile_and_load'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:37:in `start'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:205
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `require'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `init_passenger'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:155
+
+[ 2013-05-16 10:26:33.7276 24137/b6024b90 Pool2/Spawner.h:739 ]: [App 24404 stdout] 
+[ 2013-05-16 10:26:33.7278 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24404 stderr] /etc/profile: line 78: /scripts/gethomedir: Permiso denegado
+[ 2013-05-16 10:26:33.7278 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24404 stderr] bash: /root/.bash_profile: Permiso denegado
+[ 2013-05-16 10:26:33.7278 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24404 stderr] bash: /root/.bashrc: Permiso denegado
+[ 2013-05-16 10:26:33.7445 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24404 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-05-16 10:26:33.7446 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24404 stderr] 
+[ 2013-05-16 10:26:33.8199 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24404 stderr] # mkdir -p /tmp/passenger-standalone.24125/locations.ini/libout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:26:33.8200 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24404 stderr] 
+[ 2013-05-16 10:26:33.8206 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24404 stderr] Not a valid directory. Trying a different one...
+[ 2013-05-16 10:26:33.8206 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24404 stderr] 
+[ 2013-05-16 10:26:33.8207 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24404 stderr] -------------------------------
+[ 2013-05-16 10:26:33.8207 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24404 stderr] 
+[ 2013-05-16 10:26:33.8208 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24404 stderr] # mkdir -p //.passenger/native_support/4.0.2/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:26:33.8208 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24404 stderr] 
+[ 2013-05-16 10:26:33.8297 24137/b6024b90 Pool2/Implementation.cpp:762 ]: Could not spawn process for group /home/mc001055/filtros_web#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:454)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:557)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:205)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:743)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:695)
+
+[ 2013-05-16 10:26:33.8300 24137/b6a66b90 agents/HelperAgent/RequestHandler.h:1888 ]: [Client 22] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+Permission denied - /.passenger (Errno::EACCES)
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `each'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:145:in `mkdir'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:162:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:127:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:138:in `compile_and_load'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:37:in `start'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:205
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `require'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `init_passenger'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:155
+
+[ 2013-05-16 10:26:36.2696 24137/b6024b90 Pool2/Spawner.h:739 ]: [App 24484 stdout] 
+[ 2013-05-16 10:26:36.2697 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24484 stderr] /etc/profile: line 78: /scripts/gethomedir: Permiso denegado
+[ 2013-05-16 10:26:36.2698 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24484 stderr] bash: /root/.bash_profile: Permiso denegado
+[ 2013-05-16 10:26:36.2698 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24484 stderr] bash: /root/.bashrc: Permiso denegado
+[ 2013-05-16 10:26:36.3469 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24484 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-05-16 10:26:36.3470 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24484 stderr] 
+[ 2013-05-16 10:26:36.3612 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24484 stderr] # mkdir -p /tmp/passenger-standalone.24125/locations.ini/libout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:26:36.3612 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24484 stderr] 
+[ 2013-05-16 10:26:36.3618 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24484 stderr] Not a valid directory. Trying a different one...
+[ 2013-05-16 10:26:36.3618 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24484 stderr] 
+[ 2013-05-16 10:26:36.3619 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24484 stderr] -------------------------------
+[ 2013-05-16 10:26:36.3619 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24484 stderr] 
+[ 2013-05-16 10:26:36.3620 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24484 stderr] # mkdir -p //.passenger/native_support/4.0.2/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:26:36.3620 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24484 stderr] 
+[ 2013-05-16 10:26:36.3693 24137/b6024b90 Pool2/Implementation.cpp:762 ]: Could not spawn process for group /home/mc001055/filtros_web#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:454)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:557)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:205)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:743)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:695)
+
+[ 2013-05-16 10:26:36.3695 24137/b6a66b90 agents/HelperAgent/RequestHandler.h:1888 ]: [Client 22] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+Permission denied - /.passenger (Errno::EACCES)
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `each'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:145:in `mkdir'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:162:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:127:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:138:in `compile_and_load'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:37:in `start'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:205
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `require'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `init_passenger'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:155
+
+[ 2013-05-16 10:27:04.1585 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24548 stderr] /etc/profile: line 78: /scripts/gethomedir: Permiso denegado
+[ 2013-05-16 10:27:04.1596 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24548 stderr] bash: /root/.bash_profile: Permiso denegado
+[ 2013-05-16 10:27:04.1596 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24548 stderr] bash: /root/.bashrc: Permiso denegado
+[ 2013-05-16 10:27:04.1681 24137/b6024b90 Pool2/Spawner.h:739 ]: [App 24548 stdout] 
+[ 2013-05-16 10:27:04.1902 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24548 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-05-16 10:27:04.1903 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24548 stderr] 
+[ 2013-05-16 10:27:04.2032 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24548 stderr] # mkdir -p /tmp/passenger-standalone.24125/locations.ini/libout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:27:04.2032 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24548 stderr] 
+[ 2013-05-16 10:27:04.2038 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24548 stderr] Not a valid directory. Trying a different one...
+[ 2013-05-16 10:27:04.2038 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24548 stderr] 
+[ 2013-05-16 10:27:04.2039 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24548 stderr] -------------------------------
+[ 2013-05-16 10:27:04.2039 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24548 stderr] 
+[ 2013-05-16 10:27:04.2040 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 24548 stderr] # mkdir -p //.passenger/native_support/4.0.2/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:27:04.2040 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 24548 stderr] 
+[ 2013-05-16 10:27:04.2112 24137/b6024b90 Pool2/Implementation.cpp:762 ]: Could not spawn process for group /home/mc001055/filtros_web#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:454)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:557)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:205)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:743)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:695)
+
+[ 2013-05-16 10:27:04.2114 24137/b6a66b90 agents/HelperAgent/RequestHandler.h:1888 ]: [Client 22] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+Permission denied - /.passenger (Errno::EACCES)
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `each'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:145:in `mkdir'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:162:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:127:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:138:in `compile_and_load'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:37:in `start'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:205
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `require'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `init_passenger'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:155
+
+[ 2013-05-16 10:29:25.5624 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 25278 stderr] /etc/profile: line 78: /scripts/gethomedir: Permiso denegado
+[ 2013-05-16 10:29:25.5634 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 25278 stderr] bash: /root/.bash_profile: Permiso denegado
+[ 2013-05-16 10:29:25.5635 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 25278 stderr] bash: /root/.bashrc: Permiso denegado
+[ 2013-05-16 10:29:25.5718 24137/b6024b90 Pool2/Spawner.h:739 ]: [App 25278 stdout] 
+[ 2013-05-16 10:29:25.5939 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 25278 stderr] *** Phusion Passenger: no passenger_native_support.so found for the current Ruby interpreter. Compiling one...
+[ 2013-05-16 10:29:25.5940 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 25278 stderr] 
+[ 2013-05-16 10:29:25.6074 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 25278 stderr] # mkdir -p /tmp/passenger-standalone.24125/locations.ini/libout/ruby/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:29:25.6075 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 25278 stderr] 
+[ 2013-05-16 10:29:25.6080 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 25278 stderr] Not a valid directory. Trying a different one...
+[ 2013-05-16 10:29:25.6081 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 25278 stderr] 
+[ 2013-05-16 10:29:25.6081 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 25278 stderr] -------------------------------
+[ 2013-05-16 10:29:25.6082 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 25278 stderr] 
+[ 2013-05-16 10:29:25.6082 24137/b5fe3b90 Pool2/Spawner.h:159 ]: [App 25278 stderr] # mkdir -p //.passenger/native_support/4.0.2/ruby-1.8.7-athlon-linux
+[ 2013-05-16 10:29:25.6083 24137/b5fe3b90 Pool2/Spawner.h:151 ]: [App 25278 stderr] 
+[ 2013-05-16 10:29:25.6163 24137/b6024b90 Pool2/Implementation.cpp:762 ]: Could not spawn process for group /home/mc001055/filtros_web#default: An error occured while starting up the preloader.
+     in 'void Passenger::ApplicationPool2::SmartSpawner::handleErrorResponse(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:454)
+     in 'std::string Passenger::ApplicationPool2::SmartSpawner::negotiatePreloaderStartup(Passenger::ApplicationPool2::SmartSpawner::StartupDetails&)' (SmartSpawner.h:557)
+     in 'void Passenger::ApplicationPool2::SmartSpawner::startPreloader()' (SmartSpawner.h:205)
+     in 'virtual Passenger::ApplicationPool2::ProcessPtr Passenger::ApplicationPool2::SmartSpawner::spawn(const Passenger::ApplicationPool2::Options&)' (SmartSpawner.h:743)
+     in 'void Passenger::ApplicationPool2::Group::spawnThreadRealMain(const Passenger::ApplicationPool2::SpawnerPtr&, const Passenger::ApplicationPool2::Options&, unsigned int)' (Implementation.cpp:695)
+
+[ 2013-05-16 10:29:25.6164 24137/b6a66b90 agents/HelperAgent/RequestHandler.h:1888 ]: [Client 22] Cannot checkout session. An error occured while starting up the preloader.
+Error page:
+Permission denied - /.passenger (Errno::EACCES)
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+  /usr/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+  /usr/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `each'
+  /usr/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:145:in `mkdir'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:162:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:127:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:160:in `compile'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:138:in `compile_and_load'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:37:in `start'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/lib/phusion_passenger/native_support.rb:205
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `require'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:44:in `init_passenger'
+  /usr/lib/ruby/gems/1.8/gems/passenger-4.0.2/helper-scripts/classic-rails-preloader.rb:155
+

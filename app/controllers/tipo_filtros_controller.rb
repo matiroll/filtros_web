@@ -1,5 +1,4 @@
 class TipoFiltrosController < ApplicationController
-      before_filter :require_login
   # GET /tipo_filtros
   # GET /tipo_filtros.xml
   def index

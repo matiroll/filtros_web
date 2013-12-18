@@ -1,6 +1,4 @@
 class ImagensController < ApplicationController
-      before_filter :require_login
-
   # GET /imagens
   # GET /imagens.xml
   def index

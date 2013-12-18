@@ -1,6 +1,5 @@
 class FiltroVehiculosController < ApplicationController
-      before_filter :require_login
-# GET /filtro_vehiculos
+  # GET /filtro_vehiculos
   # GET /filtro_vehiculos.xml
   def index
     @filtro_vehiculos = FiltroVehiculo.all
