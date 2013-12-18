@@ -6,7 +6,7 @@
      	<br />
       <center><h4>Seleccione Tipo de vehículo</h4><br /></center>
 	  <% @tipo_vehiculos.each do |un_tipo|%>
-	  	<div style="background-image:url('/img/boton_catalogo/button_<%= un_tipo.id.to_s == params[:id].to_s ? "on" : "off"%>.png');background-repeat:no-repeat;padding-top:8px;text-align:center;" >
+	  	<div style="background-image:url('/img/boton_catalogo/button_<%= un_tipo.id.to_s == params[:id].to_s ? "on" : "off"%>.png');background-repeat:no-repeat;padding-top:8px;text-align:center;margin-left:25px;" >
 					<a href="/tipo_v/<%= un_tipo.id %>"><h3><%= un_tipo.nombre%><br/>&nbsp;</h3></a>			
 	  	</div>       
 	  <% end%> 
